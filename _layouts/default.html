@@ -14,16 +14,16 @@
       {% include footer.html %}
     </div>
 
-    <script src="{% if site.cdn %}{{ site.cdn }}{% else %}{{ site.assets_path }}{% endif %}/js/jquery.min.js"></script>
-    <script src="{% if site.cdn %}{{ site.cdn }}{% else %}{{ site.assets_path }}{% endif %}/js/bootstrap.min.js"></script>
-    <script src="{% if site.cdn %}{{ site.cdn }}{% else %}{{ site.assets_path }}{% endif %}/js/webcore.js"></script>
-    <script src="{% if site.cdn %}{{ site.cdn }}{% else %}{{ site.assets_path }}{% endif %}/js/jquery.qrcode.min.js"></script>
+    <script src="{% if site.cdn %}{{ site.cdn }}{% else %}{{ site.url }}{{ site.assets_path }}{% endif %}/js/jquery.min.js"></script>
+    <script src="{% if site.cdn %}{{ site.cdn }}{% else %}{{ site.url }}{{ site.assets_path }}{% endif %}/js/bootstrap.min.js"></script>
+    <script src="{% if site.cdn %}{{ site.cdn }}{% else %}{{ site.url }}{{ site.assets_path }}{% endif %}/js/webcore.js"></script>
+    <script src="{% if site.cdn %}{{ site.cdn }}{% else %}{{ site.url }}{{ site.assets_path }}{% endif %}/js/jquery.qrcode.min.js"></script>
 
     <script>
       $("#code").qrcode({
         width: 150,
         height: 150,
-        text: "http:{{ site.url }}{{ page.url }}"
+        text: "{{ site.url }}{{ page.url }}"
       });
     </script>
 
