@@ -1,6 +1,6 @@
 # Site settings
 title: "Economics template"
-url: "http:s//snowdj.github.io/econ"
+url: "https://snowdj.github.io/econ"
 paginate: 5
 author:
     name: snowdj
