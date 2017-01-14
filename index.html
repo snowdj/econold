@@ -5,6 +5,8 @@ layout: default
   {% for post in paginator.posts %}
   <h3 class="title"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a><time class="small">{{ post.date | date: "%Y.%m.%d" }}</time></h3>
   
+<p>	
+	
    {% if post.categories != empty %}
             
             {% for category in post.categories %}
@@ -30,13 +32,13 @@ layout: default
 	    
             {% endif %}
 
-  
+  </p> 
   
   <!--  more control what is shown in index.html    -->
   {% if post.content contains "<!-- more -->" %}
   {{ post.content | split:'<!-- more -->' | first }}
   {% else %}
-  {{ post.content | strip_html | truncate:150 }}
+  {{ post.content | strip_html | truncate:250 }}
   {% endif %}
   {% endfor %}
 
