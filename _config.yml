@@ -1,9 +1,9 @@
 # Site settings
-title: "Jekyll template"
-url: "//ihavee.github.io"
+title: "Economics template"
+url: "//snowdj.github.io/econ"
 paginate: 5
 author:
-    name: Havee
+    name: snowdj
     github:
     email:
     gitcafe:
@@ -28,7 +28,7 @@ sass:
 # comment
 comments:
     duoshuo:
-        name:                                # short name
+        name:  snowdj                              # short name
         rcomments:
             num: 10
             avatar: 0
