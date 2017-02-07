@@ -19,6 +19,8 @@
     <script src="{% if site.cdn %}{{ site.cdn }}{% else %}{{ site.url }}{{ site.assets_path }}{% endif %}/js/webcore.js"></script>
     <script src="{% if site.cdn %}{{ site.cdn }}{% else %}{{ site.url }}{{ site.assets_path }}{% endif %}/js/jquery.qrcode.min.js"></script>
 
+    
+   <!-- Add mathjax support -->
     <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
     <script type="text/x-mathjax-config">
@@ -27,6 +29,12 @@
       });
     </script> 
     
+    <!-- Add graph support -->
+
+    <script src="//cdn.rawgit.com/knsv/mermaid/master/dist/mermaid.min.js"></script>
+    <link rel="stylesheet" href="//cdn.rawgit.com/knsv/mermaid/master/dist/mermaid.css">
+    <script>mermaid.initialize({startOnLoad:true});</script>
+
     
     <!--
     <script>
