@@ -21,6 +21,12 @@
   <link href="{{ site.url }}{{ site.rss_path }}" type="application/rss+xml" rel="alternate" title="{{ site.title }} RSS Feed">
   <link href="{{ site.url }}{{ site.atom_path }}" type="application/atom+xml" rel="alternate" title="{{ site.title }} ATOM Feed">
 
+  <script src="//cdn.rawgit.com/knsv/mermaid/master/dist/mermaid.min.js"></script>
+  <link rel="stylesheet" href="//cdn.rawgit.com/knsv/mermaid/master/dist/mermaid.css">
+  <script>mermaid.initialize({startOnLoad:true});</script>
+  
+  
+  
 <!-- script
   {% if site.webmaster.baidu.verify %}<meta name="baidu-site-verification" content="{{ site.webmaster.baidu.verify }}" />{% endif %}
   {% if site.webmaster.google.verify %}<meta name="google-site-verification" content="{{ site.webmaster.google.verify }}" />{% endif %}
