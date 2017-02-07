@@ -34,13 +34,16 @@ layout: default
 
   </p> 
   
-  <!--  more control what is shown in index.html    -->
-  {% if post.content contains "<!-- more -->" %}
-  {{ post.content | split:'<!-- more -->' | first }}
-  {% else %}
-  {{ post.content | strip_html | truncate:250 }}
-  {% endif %}
-  {% endfor %}
+    <!--{{ post.content }} -->
+
+    <!--  more control what is shown in index.html  http://briankhuu.com/blog/self/jekyll/2014/12/03/post-truncation-in-jekyll.html  -->
+
+    {% if post.content contains '<!--more-->' %}
+        {{ post.content | split:'<!--more-->' | first }}
+    {% else %}
+        {{ post.excerpt }}
+    {% endif %}
+    <a href="{{ post.url }}">read more</a>
 
   <!-- Pagination links -->
   <div class="pull-right">
